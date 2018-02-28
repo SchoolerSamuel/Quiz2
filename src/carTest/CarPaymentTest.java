@@ -17,9 +17,9 @@ class CarPaymentTest {
 		
 		CarPayment myTestCar = new CarPayment(principle, downPay, months, interest);
 		
-		assertEquals( 743.64, myTestCar.monthlyPay(), .01);
+		assertEquals( 743.65, myTestCar.monthlyPay(), .01);
 		
-		assertEquals( 210000, myTestCar.totalInterest(), 5);
+		assertEquals( 9618.8, myTestCar.totalInterest(), .01);
 		
 	}
 

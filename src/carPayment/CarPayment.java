@@ -53,7 +53,7 @@ public class CarPayment {
 		}
 		
 		public double totalInterest() {
-			return (this.getTotalPrice() - this.getDownPay()) * this.interestRate * this.period;
+			return ((this.monthlyPay() * this.period) - this.totalPrice);
 
 		}
 
